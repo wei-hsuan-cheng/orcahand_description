@@ -18,17 +18,17 @@ The `extended` version contains additional bodies (incl. inertial properties) su
 ## Example Usage
 1. Clone the repository:
    ```bash
-   git clone git@github.com:orcahand/orcahand_description.git
+   git clone https://github.com/wei-hsuan-cheng/orcahand_description.git
    cd orcahand_description
    ```
 2. Install the required visualization dependencies:
    ```bash
-   pip install mujoco
+   pip3 install mujoco
    ```
 3. Simulate any version using MuJoCo:
    ```bash
-   python -m mujoco.viewer --mjcf=$(pwd)/v1/scene_combined.xml
-   python -m mujoco.viewer --mjcf=$(pwd)/v2/scene_combined.xml
+   python3 -m mujoco.viewer --mjcf=$(pwd)/v1/scene_combined.xml
+   python3 -m mujoco.viewer --mjcf=$(pwd)/v2/scene_combined.xml
    ```
 
 ## Note on Meshes
@@ -47,7 +47,7 @@ Collision meshes contain the following amount of faces:
 You can further reduce or mirror meshes using the `utils/mesh_utils.py` script. With the same script, you can also print their number of faces. Some extra dependencies are required:
 ```bash
 cd utils
-pip install -r utils_requirements.txt
+pip3 install -r utils_requirements.txt
 ```
 
 We can also recommend the VSCode extension `mtsmfm.vscode-stl-viewer` for quickly visualizing STL meshes.
